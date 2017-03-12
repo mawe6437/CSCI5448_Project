@@ -182,12 +182,12 @@
 							"showShadow": true,
 							"containerChangeable": false,
 							"containerExtending": false,
-							"left": 16,
-							"top": 392,
-							"width": 192,
-							"height": 25,
+							"left": 232,
+							"top": 328,
+							"width": 449,
+							"height": 65,
 							"autoResize": false,
-							"text": "Join, add vehicle",
+							"text": "UR-01 (UC #1) Users can create a new account using email address\nUR-03 (UC #3) Users can add vehicles and vehicle data\nMatt Weber",
 							"wordWrap": true
 						},
 						{
