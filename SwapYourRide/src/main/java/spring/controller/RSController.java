@@ -28,7 +28,7 @@ public class RSController
   private String loginMsg = "";
   
   @RequestMapping(value="/")
-  public ModelAndView listContact(ModelAndView model) throws IOException{
+  public ModelAndView loginHome(ModelAndView model) throws IOException{
   	  System.out.println("Made it to default handler");
   	  LoginDetail loginDetail = new LoginDetail();
       model.addObject("login", loginDetail);
@@ -71,31 +71,6 @@ public class RSController
   		    else
   		    {
   		    	return loginMain(null);
-  		    	/*
-  		    	int userId = rsAccount.getUserId();
-  		    	
-  		    	// Retrieve vehicles, swap requests, add Attributes
-  		    	List<Vehicle> vlist = rsaccountDAO.getVehicles(userId);
-  		    	
-  		    	List<Swap_Request> srSent = rsaccountDAO.getSwapReqsSent(userId);
-  		    	// Create a vehicle list related to these swaps
-  		    	
-  		    	List<Swap_Request> srRecv = rsaccountDAO.getSwapReqsRecv(userId);
-  		        // Create a vehicle list related to these swaps
-  		    	
-  			    ModelAndView model = new ModelAndView("accountLogin");
-  			    model.addObject("email", rsAccount.getEmail());
-  			    // Vehicle List
-  		        model.addObject("vehicleList", vlist);
-  		        // Object to add vehicle
-  		 	    Vehicle vehicle = new Vehicle();
-  		  	    model.addObject("vehicle", vehicle);
-  		  	    // Swap Req Sent List
-  		        model.addObject("srSentList", srSent);
-  		        // Swap Req Recv List
-  		        model.addObject("srRecvList", srRecv);
-  		    	return model;
-  		    	*/
   		    }
   	 
   		}
