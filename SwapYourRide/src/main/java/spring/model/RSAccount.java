@@ -78,33 +78,4 @@ public class RSAccount {
 	public String getPassword() {
 		return m_password;
 	}
-	
-	public RSAccount createAcct(String email, String password)
-	{
-		//This may need to be moved into RSAccountFactory
-		
-		RSAccount newAcct = new RSAccount(email, password);
-		
-		//Check if this account exists
-		//dao.checkAcct(email, password);
-		
-		//Tell DAO to store this in the db
-		//newAcct.setUserId = dao.insertAcct(newAcct);
-		
-		return newAcct;
-	}
-	
-	public void loginAccount(String email, String password)
-	{
-		//This may need to be moved into RSAccountFactory
-		
-		//Pass email, password to dao
-		//If we get userId back create account
-		
-		//Retrieve vehicle_lists
-		
-		//Notify view
-	}
-    
-    
 }

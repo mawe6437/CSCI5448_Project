@@ -1,14 +1,13 @@
 package spring.model;
 
 public class Vehicle {
-	//CAR = 1, TRUCK = 2, MOTORCYCLE = 3, BOAT = 4
 	private String type;
 	private String year;
 	private String value;
 	private int vehicleId;
 	private int userId;
 	
-		public Vehicle()
+	public Vehicle()
 	{
 		
 	}
